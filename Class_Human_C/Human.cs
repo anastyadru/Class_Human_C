@@ -4,10 +4,10 @@ namespace Class_Human_C
 {
     public class Human
     {
-        public string Surname { get; set; }
-        public string Name { get; set; }
-        public string Patronymic { get; set; }
-        public DateTime Date { get; set; }
+        public string Surname;
+        public string Name;
+        public string Patronymic;
+        public DateTime Date;
 
         public Human(string surname, string name, string patronymic, DateTime date)
         {
@@ -18,7 +18,7 @@ namespace Class_Human_C
         }
         public void Print()
         {
-            Console.WriteLine(Surname, Name, Patronymic, Date);
+            Console.WriteLine("Фамилия: {surname}\nИмя: {name}\nОтчество: {patronymic}\Дата рождения: {date}\"Surname, Name, Patronymic, Date);
         }
     }
 }
