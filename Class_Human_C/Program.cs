@@ -18,8 +18,15 @@ namespace Class_Human_C
             
             Console.ReadLine();
         }
-        
-        
+
+        {
+            string Brand = "BMW";
+            Driver obj = new Driver();
+            
+            Console.WriteLine("\nКонец");
+
+            Console.ReadLine();
+        }
     }
 }
 
