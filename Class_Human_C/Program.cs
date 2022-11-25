@@ -13,8 +13,13 @@ namespace Class_Human_C
         }
 
         {
+            Employee ex = new Employee();
+            ex.Print(); // реализовала конструктор без параметров
             
+            Console.ReadLine();
         }
+        
+        
     }
 }
 
@@ -27,10 +32,3 @@ namespace Class_Human_C
             // Console.ReadKey();
             // return 0;
         // }
-
-        // {
-            // var employee = new Employee();
-            // Console.WriteLine($"Company:{employee.company}, Salary{employee.salary}, Experience{employee.experience}");
-        // }
-    // }
-// }
