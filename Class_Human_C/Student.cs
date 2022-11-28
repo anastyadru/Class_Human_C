@@ -2,7 +2,7 @@
 
 namespace Class_Human_C
 {
-    public class Student : Human 
+    public class Student : Human
     {
         public string Faculty;
         public int Course;
@@ -15,11 +15,12 @@ namespace Class_Human_C
             Course = course;
             Group = group;
         }
-        
-        public Student (Student Obj) // создала конструктор копирования
+
+        public Student(Student obj) // создала конструктор копирования
         {
             Faculty = obj.Faculty;
         }
+
         public string GetValue()
         {
             return Faculty;

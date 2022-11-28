@@ -27,15 +27,17 @@ namespace Class_Human_C
 
             Console.ReadLine();
         }
+        
+        {
+            Student o1 = new Student ("Developer");
+            Console.WriteLine(o1.GetValue());
+
+            Student o2 = new Student(o1); // скопировала объект
+            Console.WriteLine(o2.GetValue());
+            Console.ReadKey();
+            return 0;
+        }
     }
 }
 
-        // {
-            // Student_01 = new Student ("developer");
-            // Console.WriteLine(O1.GetValue());
-
-            // Student_02 = new Student(01); // скопировала объект
-            // Console.WriteLine(O2.GetValue());
-            // Console.ReadKey();
-            // return 0;
-        // }
+        
