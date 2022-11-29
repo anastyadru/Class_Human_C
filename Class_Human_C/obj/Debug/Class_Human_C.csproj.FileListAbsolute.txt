@@ -1,0 +1,7 @@
+C:\Users\user\RiderProjects\Class_Human_C\Class_Human_C\obj\Debug\Class_Human_C.csproj.AssemblyReference.cache
+C:\Users\user\RiderProjects\Class_Human_C\Class_Human_C\obj\Debug\Class_Human_C.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\RiderProjects\Class_Human_C\Class_Human_C\obj\Debug\Class_Human_C.csproj.CoreCompileInputs.cache
+C:\Users\user\RiderProjects\Class_Human_C\Class_Human_C\bin\Debug\Class_Human_C.exe
+C:\Users\user\RiderProjects\Class_Human_C\Class_Human_C\bin\Debug\Class_Human_C.pdb
+C:\Users\user\RiderProjects\Class_Human_C\Class_Human_C\obj\Debug\Class_Human_C.exe
+C:\Users\user\RiderProjects\Class_Human_C\Class_Human_C\obj\Debug\Class_Human_C.pdb
