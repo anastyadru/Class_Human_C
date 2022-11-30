@@ -8,8 +8,8 @@ namespace Class_Human_C
         public int Salary;
         public int Experience;
 
-        public Employee(string surname, string name, string patronymic) // создала конструктор без параметров
-            : base(surname, name, patronymic)
+        public Employee(string surname, string name, string patronymic, DateTime date) // создала конструктор без параметров
+            : base(surname, name, patronymic, date)
         {
             Company = " ";
             Salary = 1000;

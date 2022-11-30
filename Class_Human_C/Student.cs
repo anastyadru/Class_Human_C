@@ -8,8 +8,8 @@ namespace Class_Human_C
         public int Course;
         public string Group;
 
-        public Student(string surname, string name, string patronymic, string faculty, int course, string group)
-            : base(surname, name, patronymic)
+        public Student(string surname, string name, string patronymic, DateTime date, string faculty, int course, string group)
+            : base(surname, name, patronymic, date)
         {
             Faculty = faculty;
             Course = course;

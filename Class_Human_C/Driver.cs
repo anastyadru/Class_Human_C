@@ -7,8 +7,8 @@ namespace Class_Human_C
         public string Brand;
         public string Model;
 
-        public Driver(string surname, string name, string patronymic, string brand, string model)
-            : base(surname, name, patronymic)
+        public Driver(string surname, string name, string patronymic, DateTime date, string brand, string model)
+            : base(surname, name, patronymic, date)
         {
             Brand = brand;
             Model = model;
@@ -21,7 +21,7 @@ namespace Class_Human_C
         
         public void ObjectGenerator(string Brand, string Model)
         {
-            Driver ob = new Driver(Surname, Name, Patronymic, Brand, Model);
+            Driver ob = new Driver(Surname, Name, Patronymic, Date, Brand, Model);
         }
     }
 }
