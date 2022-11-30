@@ -22,13 +22,3 @@ namespace Class_Human_C
         }
     }
 }
-
-// static int FullYears(DateTime dt1, DateTime dt2) - возможность получить количество полных лет
-// {
-    // if (dt2.Year <= dt1.Year)
-       // return 0;
-    // int n = dt2.Year - dt1.Year;
-    // if (dt1.DayOfYear > dt2.DayOfYear)
-       // --n;
-    // return n;
-// }
