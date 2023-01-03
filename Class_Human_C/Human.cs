@@ -16,7 +16,7 @@ namespace Class_Human_C
             Patronymic = patronymic;
             Date = date;
         }
-        public void Print()
+        public override void Print()
         {
             Console.WriteLine("Фамилия: {0}\nИмя: {1}\nОтчество: {2}\nДата рождения: {3}", Surname, Name, Patronymic, Date);
         }

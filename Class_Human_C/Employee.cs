@@ -15,7 +15,7 @@ namespace Class_Human_C
             Salary = 1000;
             Experience = 2;
         }
-        public void Print()
+        public override void Print()
         {
             Console.WriteLine($"Компания: {Company}\n Зарплата: {Salary}\n Опыт: {Experience}");
         }
