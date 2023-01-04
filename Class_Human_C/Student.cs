@@ -1,4 +1,4 @@
-﻿ using System;
+﻿using System;
 
 namespace Class_Human_C
 {
@@ -16,14 +16,19 @@ namespace Class_Human_C
             Group = group;
         }
 
-        public Student(Student obj) // создала конструктор копирования
+        public override void Print()
         {
-            Faculty = obj.Faculty;
+            Console.WriteLine($"");
         }
 
-        public string GetValue()
-        {
-            return Faculty;
-        }
+        // public Student(Student obj) // создала конструктор копирования
+        // {
+            // Faculty = obj.Faculty;
+        // }
+
+        // public string GetValue()
+        // {
+            // return Faculty;
+        // }
     }
 }
