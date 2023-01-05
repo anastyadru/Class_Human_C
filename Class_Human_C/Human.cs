@@ -18,7 +18,7 @@ namespace Class_Human_C
         }
         public virtual void Print()
         {
-            Console.WriteLine("Фамилия: {0}\nИмя: {1}\nОтчество: {2}\nДата рождения: {3}", Surname, Name, Patronymic, Date);
+            Console.WriteLine();
         }
     }
 }
