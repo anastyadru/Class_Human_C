@@ -16,19 +16,16 @@ namespace Class_Human_C
             Group = group;
         }
 
-        public override void Print()
+        public Student(Student obj) // создала конструктор копирования
         {
-            Console.WriteLine($"");
+            Faculty = obj.Faculty;
         }
 
-        // public Student(Student obj) // создала конструктор копирования
-        // {
-            // Faculty = obj.Faculty;
-        // }
-
-        // public string GetValue()
-        // {
-            // return Faculty;
-        // }
+        public string GetValue()
+        {
+            return Faculty;
+        }
+        
+        
     }
 }

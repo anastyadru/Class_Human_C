@@ -13,20 +13,15 @@ namespace Class_Human_C
             Brand = brand;
             Model = model;
         }
+
+        ~Driver() // создала деструктор
+        { 
+            Console.WriteLine("Объекты {0}, {1} уничтожены", Brand, Model);
+        }
         
         public override void Print()
         {
-            Console.WriteLine($"");
+            Console.WriteLine("Фамилия: {0}\nИмя: {1}\nОтчество: {2}\nДата рождения: {3}"); 
         }
-        
-        // ~Driver() // создала деструктор
-        // {
-            // Console.WriteLine("Объекты {0}, {1} уничтожены", Brand, Model);
-        // }
-        
-        // public void ObjectGenerator(string Brand, string Model)
-        // {
-            // Driver ob = new Driver(Surname, Name, Patronymic, Date, Brand, Model);
-        // }
     }
 }

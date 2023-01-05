@@ -17,7 +17,7 @@ namespace Class_Human_C
         }
         public override void Print()
         {
-            Console.WriteLine($"Компания: {Company}\n Зарплата: {Salary}\n Опыт: {Experience}");
+            Console.WriteLine($"Фамилия: {0}\nИмя: {1}\nОтчество: {2}\nДата рождения: {3}\nКомпания: {Company}\nЗарплата: {Salary}\nОпыт: {Experience}");
         }
     }
 }

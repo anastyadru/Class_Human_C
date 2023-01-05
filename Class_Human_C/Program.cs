@@ -8,23 +8,18 @@ namespace Class_Human_C
         {
             DateTime date = new DateTime(2000, 01, 01);
             Human ex = new Human("Ivanov", "Ivan", "Ivanovich", 01.01.2000);
-            Console.WriteLine("Фамилия: {0}\nИмя: {1}\nОтчество: {2}\nДата рождения: {3}"); // реализовала конструктор с параметрами
+            ex.Print(); // реализовала конструктор с параметрами
         }
 
         {
-            Employee ex = new Employee();
+            Employee ex = new Employee("Ivanov", "Ivan", "Ivanovich", 01.01.2000);
             ex.Print(); // реализовала конструктор без параметров
-
-            Console.ReadLine();
         }
 
         {
             string Brand = "BMW";
-            Driver obj = new Driver();
-
-            Console.WriteLine("\nКонец");
-
-            Console.ReadLine();
+            Driver obj = new Driver("Ivanov", "Ivan", "Ivanovich", 01.01,"BMW","x5");
+            obj.Print();
         }
 
         {
