@@ -16,16 +16,6 @@ namespace Class_Human_C
             Group = group;
         }
 
-        public Student(Student obj) // создала конструктор копирования
-        {
-            Faculty = obj.Faculty;
-        }
 
-        public string GetValue()
-        {
-            return Faculty;
-        }
-        
-        
     }
 }

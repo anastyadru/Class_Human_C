@@ -21,16 +21,7 @@ namespace Class_Human_C
             Driver obj = new Driver("Ivanov", "Ivan", "Ivanovich", 01.01,"BMW","x5");
             obj.Print();
         }
-
-        {
-            Student o1 = new Student("Developer");
-            Console.WriteLine(o1.GetValue());
-
-            Student o2 = new Student(o1); // скопировала объект
-            Console.WriteLine(o2.GetValue());
-            Console.ReadKey();
-            return 0;
-        }
+        
     }
 }
 
