@@ -2,7 +2,7 @@
 
 namespace Class_Human_C
 {
-    public class Human
+    abstract class Human
     {
         public string Surname;
         public string Name;
