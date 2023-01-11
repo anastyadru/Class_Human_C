@@ -4,9 +4,10 @@ namespace Class_Human_C
 {
     public class Student : Human
     {
-        public string Faculty;
-        public int Course;
-        public string Group;
+        
+        string Faculty;
+        int Course;
+        string Group;
 
         public Student(string surname, string name, string patronymic, DateTime date, string faculty, int course, string group)
             : base(surname, name, patronymic, date)
@@ -16,6 +17,7 @@ namespace Class_Human_C
             Group = group;
         }
 
+        public override void Print();
 
     }
 }
