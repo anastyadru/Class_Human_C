@@ -6,7 +6,7 @@ namespace Class_Human_C
     {
         static void Main(string[] args)
         {
-            DateTime date = new DateTime(2000, 01, 01);
+            DateTime date = new DateTime(2000, 1, 1);
             Human ex = new Human("Ivanov", "Ivan", "Ivanovich", 01.01.2000);
             ex.Print(); // реализовала конструктор с параметрами
         }
