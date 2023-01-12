@@ -4,9 +4,9 @@ namespace Class_Human_C
 {
     public class Student : Human
     {
-        string Faculty { get; set; }
-        int Course { get; set; }
-        string Group { get; set; }
+        public string Faculty { get; set; }
+        public int Course { get; set; }
+        public string Group { get; set; }
 
         public Student(string surname, string name, string patronymic, DateTime date, string faculty, int course, string group)
             : base(surname, name, patronymic, date)
@@ -18,6 +18,7 @@ namespace Class_Human_C
 
         public override void Print()
         {
+            base.Print();
             Console.WriteLine();
         }
     }

@@ -7,13 +7,12 @@ namespace Class_Human_C
         static void Main(string[] args)
         {
             DateTime date = new DateTime(2000, 1, 1);
-            Employee ex = new Employee("Ivanov", "Ivan", "Ivanovich", 01.01.2000);
-            ex.Print(); // реализовала конструктор без параметров
+            Employee obj = new Employee("Ivanov", "Ivan", "Ivanovich", Convert.ToDateTime("02.02.2020"));
+            obj.Print(); // реализовала конструктор без параметров
         }
 
         {
-            string Brand = "BMW";
-            Driver obj = new Driver("Ivanov", "Ivan", "Ivanovich", 01.01,"BMW","x5");
+            Driver obj = new Driver("Ivanov", "Ivan", "Ivanovich", 02.02,"BMW","x5");
             obj.Print();
         }
         

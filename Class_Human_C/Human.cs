@@ -2,14 +2,14 @@
 
 namespace Class_Human_C
 {
-    public abstract class Human
+    public abstract class Human // запретила возможность создавать класс, только наследников
     {
-        abstract public string Surname { get; set; }
-        abstract public string Name { get; set; }
-        abstract public string Patronymic { get; set; }
-        abstract public DateTime Date { get; set; }
+        protected abstract string Surname { get; set; }
+        protected abstract string Name { get; set; }
+        protected abstract string Patronymic { get; set; }
+        protected abstract DateTime Date { get; set; }
 
-        public Human(string surname, string name, string patronymic, DateTime date) // создала конструктор с параметрами
+        protected Human(string surname, string name, string patronymic, DateTime date) // создала конструктор с параметрами
         {
             Surname = surname;
             Name = name;
@@ -18,7 +18,7 @@ namespace Class_Human_C
         }
         public virtual void Print()
         {
-            Console.WriteLine();
+            Console.WriteLine("Фамилия: {0}\nИмя: {1}\nОтчество: {2}\nДата рождения: {3}");
         }
     }
 }
