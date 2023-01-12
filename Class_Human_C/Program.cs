@@ -5,7 +5,6 @@ namespace Class_Human_C
     public class Program
     {
         static void Main(string[] args)
-
         {
             DateTime date = new DateTime(2000, 1, 1);
             Employee ex = new Employee("Ivanov", "Ivan", "Ivanovich", 01.01.2000);
@@ -20,10 +19,5 @@ namespace Class_Human_C
         
     }
 }
-
-// DateTime nowDate = DateTime.Today; - возможность получить количество полных лет
-// int age = nowDate.Year - new DateTime;
-// if (new DateTime > nowDate.AddYears(-age))
-// age--;
 
         

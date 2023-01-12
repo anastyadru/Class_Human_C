@@ -16,9 +16,9 @@ namespace Class_Human_C
             Group = group;
         }
 
-        public override void ShowInfo()
+        public override void Print()
         {
-            
+            Console.WriteLine();
         }
     }
 }

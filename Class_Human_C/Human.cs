@@ -16,8 +16,7 @@ namespace Class_Human_C
             Patronymic = patronymic;
             Date = date;
         }
-
-        public void ShowInfo()
+        public virtual void Print()
         {
             Console.WriteLine();
         }
