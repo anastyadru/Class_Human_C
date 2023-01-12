@@ -4,9 +4,9 @@ namespace Class_Human_C
 {
     public class Employee : Human
     {
-        public string Company;
-        public int Salary;
-        public int Experience;
+        public string Company { get; set; }
+        public int Salary { get; set; }
+        public int Experience { get; set; }
 
         public Employee(string surname, string name, string patronymic, DateTime date) // создала конструктор без параметров
             : base(surname, name, patronymic, date)

@@ -4,9 +4,9 @@ namespace Class_Human_C
 {
     public class Student : Human
     {
-        string Faculty;
-        int Course;
-        string Group;
+        string Faculty { get; set; }
+        int Course { get; set; }
+        string Group { get; set; }
 
         public Student(string surname, string name, string patronymic, DateTime date, string faculty, int course, string group)
             : base(surname, name, patronymic, date)

@@ -4,8 +4,8 @@ namespace Class_Human_C
 {
     sealed class Driver : Employee // запретила наследование от этого класса
     {
-        public string Brand;
-        public string Model;
+        public string Brand { get; set; }
+        public string Model { get; set; }
 
         public Driver(string surname, string name, string patronymic, DateTime date, string brand, string model)
             : base(surname, name, patronymic, date)
