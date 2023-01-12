@@ -5,13 +5,9 @@ namespace Class_Human_C
     public class Program
     {
         static void Main(string[] args)
-        {
-            DateTime date = new DateTime(2000, 1, 1);
-            Human ex = new Human("Ivanov", "Ivan", "Ivanovich", 01.01.2000);
-            ex.Print(); // реализовала конструктор с параметрами
-        }
 
         {
+            DateTime date = new DateTime(2000, 1, 1);
             Employee ex = new Employee("Ivanov", "Ivan", "Ivanovich", 01.01.2000);
             ex.Print(); // реализовала конструктор без параметров
         }

@@ -4,7 +4,6 @@ namespace Class_Human_C
 {
     public class Student : Human
     {
-        
         string Faculty;
         int Course;
         string Group;
@@ -17,7 +16,9 @@ namespace Class_Human_C
             Group = group;
         }
 
-        public override void Print();
-
+        public override void ShowInfo()
+        {
+            
+        }
     }
 }
