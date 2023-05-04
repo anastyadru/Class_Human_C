@@ -34,6 +34,11 @@ namespace Class_Human_C
             Console.WriteLine("Объект {0} уничтожен", Company);
         }
 
+        public override string Surname { get; set; }
+        public override string Name { get; set; }
+        public override string Patronymic { get; set; }
+        public override DateTime BirthDate { get; set; }
+        
         public override string ToString()
         {
             return $"{base.ToString()}, {Company}, {Salary}, {Experience}";

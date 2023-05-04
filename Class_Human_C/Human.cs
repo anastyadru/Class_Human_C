@@ -42,9 +42,9 @@ namespace Class_Human_C
             return DateTime.Now.Year - BirthDate.Year;
         }
 
-        protected virtual void Print()
+        public virtual string Print()
         {
-            Console.WriteLine("Фамилия: {0}\nИмя: {1}\nОтчество: {2}\nДата рождения: {3}");
+            return $"{Surname}, {Name}, {Patronymic}, {BirthDate}";
         }
 
     }

@@ -2,7 +2,7 @@
 
 namespace Class_Human_C
 {
-    sealed class Driver : Employee // запретила наследование от этого класса
+    internal sealed class Driver : Employee // запретила наследование от этого класса
     {
         private string Brand { get; set; }
         
@@ -32,7 +32,7 @@ namespace Class_Human_C
         
         public override string ToString()
         {
-            return $"{Surname}, {Name}, {Patronymic}, {BirthDate}, {Company}, {Salary}, {Experience}, {Brand}, {Model}";
+            return $"{base.ToString()}, {Brand}, {Model}";
         }
         
     }
