@@ -36,7 +36,7 @@ namespace Class_Human_C
 
         public override string ToString()
         {
-            return Surname + " " + Name + " " + Patronymic + " " + BirthDate + " " + Company + " " + Salary + " " + Experience + " ";
+            return $"{Surname}, {Name}, {Patronymic}, {BirthDate}, {Company}, {Salary}, {Experience}";
         }
         
     }
