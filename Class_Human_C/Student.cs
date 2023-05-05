@@ -38,10 +38,18 @@ namespace Class_Human_C
         public override string Name { get; set; }
         public override string Patronymic { get; set; }
         public override DateTime BirthDate { get; set; }
-        
+
+        public override int CalculateAge()
+        {
+            int age = DateTime.Now.Year - BirthDate.Year;
+            if (DateTime.Now.DayOfYear < BirthDate.DayOfYear)
+                age--;
+            return age;
+        }
+
         public override string ToString()
         {
-            return $"{base.ToString()}, {Faculty}, {Course}, {Group}";
+            return $"{base.ToString()}, Факультет: {Faculty}, Курс: {Course}, Группа: {Group}";
         }
         
     }

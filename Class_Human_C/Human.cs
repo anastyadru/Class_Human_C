@@ -44,7 +44,7 @@ namespace Class_Human_C
 
         public virtual string Print()
         {
-            return $"{Surname}, {Name}, {Patronymic}, {BirthDate}";
+            return $"Фамилия: {Surname}, Имя: {Name}, Отчество: {Patronymic}, Дата рождения: {BirthDate}";
         }
 
     }

@@ -41,7 +41,7 @@ namespace Class_Human_C
         
         public override string ToString()
         {
-            return $"{base.ToString()}, {Company}, {Salary}, {Experience}";
+            return $"{base.ToString()}, Компания: {Company}, ЗП: {Salary}, Опыт работы: {Experience}";
         }
         
     }

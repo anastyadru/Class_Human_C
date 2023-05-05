@@ -32,7 +32,7 @@ namespace Class_Human_C
         
         public override string ToString()
         {
-            return $"{base.ToString()}, {Brand}, {Model}";
+            return $"{base.ToString()}, Бренд: {Brand}, Модель: {Model}";
         }
         
     }
