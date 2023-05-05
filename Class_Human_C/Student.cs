@@ -49,7 +49,7 @@ namespace Class_Human_C
 
         public override string ToString()
         {
-            return $"{base.ToString()}, Факультет: {Faculty}, Курс: {Course}, Группа: {Group}";
+            return $"{base.ToString()}, Возраст: {CalculateAge()}, Факультет: {Faculty}, Курс: {Course}, Группа: {Group}";
         }
         
     }
