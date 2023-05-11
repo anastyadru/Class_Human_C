@@ -30,9 +30,9 @@ namespace Class_Human_C
                     var birth = Convert.ToDateTime(Console.ReadLine());
                     
                     Console.Write("Выберите, кого добавить:\n1) student \n2) employee \n3) driver \nВаше решение: ");
-                    var a = int.Parse(Console.ReadLine());
+                    var person = int.Parse(Console.ReadLine());
             
-                    switch (a)
+                    switch (person)
                     {
                         case 1: 
                             
@@ -71,13 +71,13 @@ namespace Class_Human_C
                         case 3:
                             
                             Console.Write("Введите название компании");
-                            var company = Console.ReadLine();
+                            var company3 = Console.ReadLine();
 
                             Console.Write("Введите заработную плату");
-                            var salary = int.Parse(Console.ReadLine());
+                            var salary3 = int.Parse(Console.ReadLine());
 
                             Console.Write("Введите опыт работы");
-                            var experience = int.Parse(Console.ReadLine());
+                            var experience3 = int.Parse(Console.ReadLine());
 
                             Console.Write("Введите бренд");
                             var brand = Console.ReadLine();
@@ -85,7 +85,7 @@ namespace Class_Human_C
                             Console.Write("Введите модель");
                             var model = Console.ReadLine();
 
-                            Driver driver = new Driver(surname, name, patronymic, birth, company, salary, experience, brand, model);
+                            Driver driver = new Driver(surname, name, patronymic, birth, company3, salary3, experience3, brand, model);
                     
                             people.Add(driver);
                     
