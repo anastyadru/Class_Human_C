@@ -9,33 +9,34 @@ namespace Class_Human_C
         static void Main(string[] args)
         {
             List<Human> people = new List<Human>();
-        
-            Console.Write("Выберите, какое действие хотите выполнить:\n1) Добавить \n2) Изменить \n3) Удалить \nВаше решение: ");
+
+            Console.Write(
+                "Выберите, какое действие хотите выполнить:\n1) Добавить \n2) Изменить \n3) Удалить \nВаше решение: ");
             var action = int.Parse(Console.ReadLine());
-            
+
             switch (action)
             {
                 case 1:
-                    
+
                     Console.WriteLine("Введите фамилию: ");
                     var surname = Console.ReadLine();
-            
+
                     Console.WriteLine("Введите имя: ");
                     var name = Console.ReadLine();
-            
+
                     Console.WriteLine("Введите отчество: ");
                     var patronymic = Console.ReadLine();
-            
+
                     Console.WriteLine("Введите дату рождения в формате ДД.ММ.ГГГГ: ");
                     var birth = Convert.ToDateTime(Console.ReadLine());
-                    
+
                     Console.Write("Выберите, кого добавить:\n1) student \n2) employee \n3) driver \nВаше решение: ");
                     var person = int.Parse(Console.ReadLine());
-            
+
                     switch (person)
                     {
-                        case 1: 
-                            
+                        case 1:
+
                             Console.Write("Введите факультет");
                             var faculty = Console.ReadLine();
 
@@ -52,7 +53,7 @@ namespace Class_Human_C
                             break;
 
                         case 2:
-                            
+
                             Console.Write("Введите название компании");
                             var company = Console.ReadLine();
 
@@ -62,14 +63,15 @@ namespace Class_Human_C
                             Console.Write("Введите опыт работы");
                             var experience = int.Parse(Console.ReadLine());
 
-                            Employee employee = new Employee(surname, name, patronymic, birth, company, salary, experience);
+                            Employee employee = new Employee(surname, name, patronymic, birth, company, salary,
+                                experience);
 
                             people.Add(employee);
-                    
+
                             break;
 
                         case 3:
-                            
+
                             Console.Write("Введите название компании");
                             var company3 = Console.ReadLine();
 
@@ -85,24 +87,29 @@ namespace Class_Human_C
                             Console.Write("Введите модель");
                             var model = Console.ReadLine();
 
-                            Driver driver = new Driver(surname, name, patronymic, birth, company3, salary3, experience3, brand, model);
-                    
+                            Driver driver = new Driver(surname, name, patronymic, birth, company3, salary3, experience3,
+                                brand, model);
+
                             people.Add(driver);
-                    
+
                             break;
                     }
+                    break;     
+
+                case 2:
                     
+                    Console.WriteLine("Введите фамилию человека, данные которого хотите изменить: ");
+                    var surnameToEdit = Console.ReadLine();
                     
+
+
+
             }
         }
-        
-        
-        
-        
-        {
-            
+    }
+}
 
-            
+
 
             for (var i = 0; i < people.Count; i++) // вывела на экран список людей и их индексы в списке
             {
@@ -189,14 +196,9 @@ namespace Class_Human_C
             {
                 people.RemoveAt(index);
                 Console.WriteLine("Информация о человеке успешно удалена!");
-            } 
-            
-            else 
+            }
+
+            else
             {
                 Console.WriteLine("Некорректный индекс");
             }
-        }
-        
-    }
-}
-
