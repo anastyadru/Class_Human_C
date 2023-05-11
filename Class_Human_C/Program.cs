@@ -5,8 +5,23 @@ namespace Class_Human_C
 {
     public class Program
     {
-        
+
         static void Main(string[] args)
+        {
+            List<Human> people = new List<Human>();
+        
+            Console.Write("Выберите, какое действие хотите выполнить:\n1) Добавить \n2) Изменить \n3) Удалить \nВаше решение: ");
+            var action = int.Parse(Console.ReadLine());
+            
+            switch (action)
+            {
+            
+            }
+        }
+        
+        
+        
+        
         {
             Console.WriteLine("Введите фамилию: ");
             var surname = Console.ReadLine();
