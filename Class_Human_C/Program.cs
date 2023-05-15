@@ -110,23 +110,73 @@ namespace Class_Human_C
                         switch (fieldToEdit)
                         {
                             case 1:
+                                
                                 Console.WriteLine("Введите новую фамилию: ");
                                 personToEdit.Surname = Console.ReadLine();
                                 break;
+                            
                             case 2:
+                                
                                 Console.WriteLine("Введите новое имя: ");
                                 personToEdit.Name = Console.ReadLine();
                                 break;
+                            
                             case 3:
+                                
                                 Console.WriteLine("Введите новое отчество: ");
                                 personToEdit.Patronymic = Console.ReadLine();
                                 break;
+                            
                             case 4:
+                                
                                 Console.WriteLine("Введите новую дату рождения в формате ДД.ММ.ГГГГ: ");
                                 personToEdit.BirthDate = Convert.ToDateTime(Console.ReadLine());
                                 break;
+                            
                             case 5:
                                 
+                                if (personToEdit is Student)
+                                {
+                                    Console.WriteLine("Введите новый факультет: ");
+                                    ((Student)personToEdit).Faculty = Console.ReadLine();
+
+                                    Console.WriteLine("Введите новый курс: ");
+                                    ((Student)personToEdit).Course = int.Parse(Console.ReadLine());
+
+                                    Console.WriteLine("Введите новую группу: ");
+                                    ((Student)personToEdit).Group = int.Parse(Console.ReadLine());
+                                }
+                                
+                                else if (personToEdit is Employee)
+                                {
+                                    Console.WriteLine("Введите новое название компании: ");
+                                    ((Employee)personToEdit).Company = Console.ReadLine();
+
+                                    Console.WriteLine("Введите новую заработную плату: ");
+                                    ((Employee)personToEdit).Salary = int.Parse(Console.ReadLine());
+
+                                    Console.WriteLine("Введите новый опыт работы: ");
+                                    ((Employee)personToEdit).Experience = int.Parse(Console.ReadLine());
+                                }
+                                
+                                else if (personToEdit is Driver)
+                                {
+                                    Console.WriteLine("Введите новое название компании: ");
+                                    ((Driver)personToEdit).Company = Console.ReadLine();
+
+                                    Console.WriteLine("Введите новую заработную плату: ");
+                                    ((Driver)personToEdit).Salary = int.Parse(Console.ReadLine());
+
+                                    Console.WriteLine("Введите новый опыт работы: ");
+                                    ((Driver)personToEdit).Experience = int.Parse(Console.ReadLine());
+
+                                    Console.WriteLine("Введите новый бренд: ");
+                                    ((Driver)personToEdit).Brand = Console.ReadLine();
+
+                                    Console.WriteLine("Введите новую модель: ");
+                                    ((Driver)personToEdit).Model = Console.ReadLine();
+                                }
+                                break;
                         }
                     }
                     break;
@@ -154,97 +204,3 @@ namespace Class_Human_C
         }
     }
 }
-
-
-
-            // for (var i = 0; i < people.Count; i++) // вывела на экран список людей и их индексы в списке
-            // {
-                // Console.WriteLine($"{i}. {people[i].Surname} ({people[i].BirthDate} лет)");
-            // }
-            
-            // Console.Write("Введите номер человека, чьи данные Вы хотите изменить или удалить: ");
-            // var index = int.Parse(Console.ReadLine());
-            
-            // Console.Write("Выберите, что вы хотите изменить:\n1) Фамилию \n2) Имя \n3) Отчество \n4) Дату рождения" +
-                          // "\n5) Факультет \n6) Курс \n7) Группу \n8) Компанию \n9) Заработную плату" +
-                          // "\n10) Опыт работы \n11) Бренд \n12) Модель \n13) Ничего не меняем \nВаше решение: ");
-            // var choice = int.Parse(Console.ReadLine());
-
-            // switch (choice)
-            // {
-                // case 1:
-                    // Console.Write("Введите новую фамилию: ");
-                    // people[index].Surname = Console.ReadLine();
-                    // break;
-                
-                // case 2:
-                    // Console.Write("Введите новое имя: ");
-                    // people[index].Name = Console.ReadLine();
-                    // break;
-                
-                // case 3:
-                    // Console.Write("Введите новое отчество: ");
-                    // people[index].Patronymic = Console.ReadLine();
-                    // break;
-                
-                // case 4:
-                    // Console.Write("Введите новую дату рождения в формате ДД.ММ.ГГГГ: ");
-                    // people[index].BirthDate = Convert.ToDateTime(Console.ReadLine());
-                    // break;
-                
-                // case 5:
-                    // Console.Write("Введите новый факультет: ");
-                    // people[index].Faculty = Console.ReadLine();
-                    // break;
-                
-                // case 6:
-                    // Console.Write("Введите новый курс: ");
-                    // people[index].Course = int.Parse(Console.ReadLine());
-                    // break;
-                
-                // case 7:
-                    // Console.Write("Введите новую группу: ");
-                    // people[index].Group = int.Parse(Console.ReadLine());
-                    // break;
-                
-                // case 8:
-                    // Console.Write("Введите новое название компании: ");
-                    // people[index].Company = Console.ReadLine();
-                    // break;
-                
-                // case 9:
-                    // Console.Write("Введите новую заработную плату: ");
-                    // people[index].Salary = int.Parse(Console.ReadLine());
-                    // break;
-                
-                // case 10:
-                    // Console.Write("Введите новый опыт работы: ");
-                    // people[index].Experience = int.Parse(Console.ReadLine());
-                    // break;
-                
-                // case 11:
-                    // Console.Write("Введите новое название бренда: ");
-                    // people[index].Brand = Console.ReadLine();
-                    // break;
-                
-                // case 12:
-                    // Console.Write("Введите новую модель: ");
-                    // people[index].Model = Console.ReadLine();
-                    // break;
-                
-                // case 13:
-                    // Ничего не меняем;
-                    // ;
-                    // break;
-            // }
-
-            // if (index >= 0 && index < people.Count) 
-            // {
-                // people.RemoveAt(index);
-                // Console.WriteLine("Информация о человеке успешно удалена!");
-            // }
-
-            // else
-            // {
-                // Console.WriteLine("Некорректный индекс");
-            // }
