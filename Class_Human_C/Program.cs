@@ -159,26 +159,34 @@ namespace Class_Human_C
                                     ((Employee)personToEdit).Experience = int.Parse(Console.ReadLine());
                                 }
                                 
-                                else if (personToEdit is Driver)
-                                {
-                                    Console.WriteLine("Введите новое название компании: ");
-                                    ((Driver)personToEdit).Company = Console.ReadLine();
+                                // else if (personToEdit is Driver)
+                                // {
+                                    // Console.WriteLine("Введите новое название компании: ");
+                                    // ((Driver)personToEdit).Company = Console.ReadLine();
 
-                                    Console.WriteLine("Введите новую заработную плату: ");
-                                    ((Driver)personToEdit).Salary = int.Parse(Console.ReadLine());
+                                    // Console.WriteLine("Введите новую заработную плату: ");
+                                    // ((Driver)personToEdit).Salary = int.Parse(Console.ReadLine());
 
-                                    Console.WriteLine("Введите новый опыт работы: ");
-                                    ((Driver)personToEdit).Experience = int.Parse(Console.ReadLine());
+                                    // Console.WriteLine("Введите новый опыт работы: ");
+                                    // ((Driver)personToEdit).Experience = int.Parse(Console.ReadLine());
 
-                                    Console.WriteLine("Введите новый бренд: ");
-                                    ((Driver)personToEdit).Brand = Console.ReadLine();
+                                    // Console.WriteLine("Введите новый бренд: ");
+                                    // ((Driver)personToEdit).Brand = Console.ReadLine();
 
-                                    Console.WriteLine("Введите новую модель: ");
-                                    ((Driver)personToEdit).Model = Console.ReadLine();
-                                }
+                                    // Console.WriteLine("Введите новую модель: ");
+                                    // ((Driver)personToEdit).Model = Console.ReadLine();
+                                // }
                                 break;
                         }
+
+                        Console.WriteLine("Изменения сохранены");
                     }
+                    
+                    else 
+                    {
+                        Console.WriteLine("Человек с такой фамилией не найден");
+                    }
+                    
                     break;
                 
                 case 3:
