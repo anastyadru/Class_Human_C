@@ -10,8 +10,7 @@ namespace Class_Human_C
         {
             List<Human> people = new List<Human>();
 
-            Console.Write(
-                "Выберите, какое действие хотите выполнить:\n1) Добавить \n2) Изменить \n3) Удалить \nВаше решение: ");
+            Console.Write("Выберите, какое действие хотите выполнить:\n1) Добавить \n2) Изменить \n3) Удалить \nВаше решение: ");
             var action = int.Parse(Console.ReadLine());
 
             switch (action)
@@ -108,8 +107,26 @@ namespace Class_Human_C
                         Console.WriteLine("Выберите, какую информацию хотите изменить:\n1) Фамилия \n2) Имя \n3) Отчество \n4) Дата рождения \n5) Дополнительные поля (для студента, сотрудника или водителя) \nВаше решение: ");
                         var fieldToEdit = int.Parse(Console.ReadLine());
 
+                        switch (fieldToEdit)
                         {
-
+                            case 1:
+                                Console.WriteLine("Введите новую фамилию: ");
+                                personToEdit.Surname = Console.ReadLine();
+                                break;
+                            case 2:
+                                Console.WriteLine("Введите новое имя: ");
+                                personToEdit.Name = Console.ReadLine();
+                                break;
+                            case 3:
+                                Console.WriteLine("Введите новое отчество: ");
+                                personToEdit.Patronymic = Console.ReadLine();
+                                break;
+                            case 4:
+                                Console.WriteLine("Введите новую дату рождения в формате ДД.ММ.ГГГГ: ");
+                                personToEdit.BirthDate = Convert.ToDateTime(Console.ReadLine());
+                                break;
+                            case 5:
+                                
                         }
                     }
                     break;
