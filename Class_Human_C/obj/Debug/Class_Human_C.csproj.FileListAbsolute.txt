@@ -5,3 +5,10 @@ C:\Users\user\RiderProjects\Class_Human_C\Class_Human_C\bin\Debug\Class_Human_C.
 C:\Users\user\RiderProjects\Class_Human_C\Class_Human_C\bin\Debug\Class_Human_C.pdb
 C:\Users\user\RiderProjects\Class_Human_C\Class_Human_C\obj\Debug\Class_Human_C.exe
 C:\Users\user\RiderProjects\Class_Human_C\Class_Human_C\obj\Debug\Class_Human_C.pdb
+C:\Program Files\Fork\Class_Human_C\Class_Human_C\bin\Debug\Class_Human_C.exe
+C:\Program Files\Fork\Class_Human_C\Class_Human_C\bin\Debug\Class_Human_C.pdb
+C:\Program Files\Fork\Class_Human_C\Class_Human_C\obj\Debug\Class_Human_C.csproj.AssemblyReference.cache
+C:\Program Files\Fork\Class_Human_C\Class_Human_C\obj\Debug\Class_Human_C.csproj.SuggestedBindingRedirects.cache
+C:\Program Files\Fork\Class_Human_C\Class_Human_C\obj\Debug\Class_Human_C.csproj.CoreCompileInputs.cache
+C:\Program Files\Fork\Class_Human_C\Class_Human_C\obj\Debug\Class_Human_C.exe
+C:\Program Files\Fork\Class_Human_C\Class_Human_C\obj\Debug\Class_Human_C.pdb

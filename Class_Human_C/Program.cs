@@ -116,6 +116,21 @@ namespace Class_Human_C
                 
                 case 3:
 
+                    Console.WriteLine("Введите фамилию человека, данные которого хотите удалить: ");
+                    var surnameToDelete = Console.ReadLine();
+                    
+                    var personToDelete = people.Find(p => p.Surname == surnameToDelete);
+
+                    if (personToDelete != null)
+                    {
+                        people.Remove(personToDelete);
+                        Console.WriteLine("Информация о человеке удалена.");
+                    }
+                    
+                    else
+                    {
+                        Console.WriteLine("Человек с такой фамилией не найден.");
+                    }
                     
                     break;
             }
