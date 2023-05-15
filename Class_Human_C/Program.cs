@@ -36,13 +36,13 @@ namespace Class_Human_C
                     {
                         case 1:
 
-                            Console.Write("Введите факультет");
+                            Console.Write("Введите факультет: ");
                             var faculty = Console.ReadLine();
 
-                            Console.Write("Введите курс");
+                            Console.Write("Введите курс: ");
                             var course = int.Parse(Console.ReadLine());
 
-                            Console.Write("Введите группу");
+                            Console.Write("Введите группу: ");
                             var group = int.Parse(Console.ReadLine());
 
                             Student student = new Student(surname, name, patronymic, birth, faculty, course, group);
@@ -53,13 +53,13 @@ namespace Class_Human_C
 
                         case 2:
 
-                            Console.Write("Введите название компании");
+                            Console.Write("Введите название компании: ");
                             var company = Console.ReadLine();
 
-                            Console.Write("Введите заработную плату");
+                            Console.Write("Введите заработную плату: ");
                             var salary = int.Parse(Console.ReadLine());
 
-                            Console.Write("Введите опыт работы");
+                            Console.Write("Введите опыт работы: ");
                             var experience = int.Parse(Console.ReadLine());
 
                             Employee employee = new Employee(surname, name, patronymic, birth, company, salary,
@@ -71,19 +71,19 @@ namespace Class_Human_C
 
                         case 3:
 
-                            Console.Write("Введите название компании");
+                            Console.Write("Введите название компании: ");
                             var company3 = Console.ReadLine();
 
-                            Console.Write("Введите заработную плату");
+                            Console.Write("Введите заработную плату: ");
                             var salary3 = int.Parse(Console.ReadLine());
 
-                            Console.Write("Введите опыт работы");
+                            Console.Write("Введите опыт работы: ");
                             var experience3 = int.Parse(Console.ReadLine());
 
-                            Console.Write("Введите бренд");
+                            Console.Write("Введите бренд: ");
                             var brand = Console.ReadLine();
 
-                            Console.Write("Введите модель");
+                            Console.Write("Введите модель: ");
                             var model = Console.ReadLine();
 
                             Driver driver = new Driver(surname, name, patronymic, birth, company3, salary3, experience3,
