@@ -32,7 +32,7 @@ namespace Class_Human_C
         
         public override string ToString()
         {
-            return $"{Print()}, Бренд: {Brand}, Модель: {Model}";
+            return $"{Print()}, Возраст: {CalculateAge()}, Компания: {Company}, ЗП: {Salary}, Опыт работы: {Experience}, Бренд: {Brand}, Модель: {Model}";
         }
         
     }

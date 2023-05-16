@@ -29,7 +29,7 @@ namespace Class_Human_C
                     Console.WriteLine("Введите дату рождения в формате ДД.ММ.ГГГГ: ");
                     var birth = Convert.ToDateTime(Console.ReadLine());
 
-                    Console.Write("Выберите, кого добавить:\n1) student \n2) employee \n3) driver \nВаше решение: ");
+                    Console.Write("Выберите, кого хотите добавить:\n1) student \n2) employee \n3) driver \nВаше решение: ");
                     var person = int.Parse(Console.ReadLine());
 
                     switch (person)
@@ -46,8 +46,8 @@ namespace Class_Human_C
                             var group = int.Parse(Console.ReadLine());
 
                             Student student = new Student(surname, name, patronymic, birth, faculty, course, group);
-
                             people.Add(student);
+                            
                             Console.WriteLine("Данные студента добавлены:\n" + student); 
 
                             break;
@@ -63,10 +63,9 @@ namespace Class_Human_C
                             Console.Write("Введите опыт работы: ");
                             var experience = int.Parse(Console.ReadLine());
 
-                            Employee employee = new Employee(surname, name, patronymic, birth, company, salary,
-                                experience);
-
+                            Employee employee = new Employee(surname, name, patronymic, birth, company, salary, experience);
                             people.Add(employee);
+                            
                             Console.WriteLine("Данные работника добавлены:\n" + employee);
 
                             break;
@@ -88,12 +87,11 @@ namespace Class_Human_C
                             Console.Write("Введите модель: ");
                             var model = Console.ReadLine();
 
-                            Driver driver = new Driver(surname, name, patronymic, birth, company3, salary3, experience3,
-                                brand, model);
-
+                            Driver driver = new Driver(surname, name, patronymic, birth, company3, salary3, experience3, brand, model);
                             people.Add(driver);
+                            
                             Console.WriteLine("Данные водителя добавлены:\n" + driver);
-
+                            
                             break;
                     }
                     break;     
