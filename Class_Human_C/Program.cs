@@ -48,6 +48,8 @@ namespace Class_Human_C
                             Student student = new Student(surname, name, patronymic, birth, faculty, course, group);
 
                             people.Add(student);
+                            
+                            Console.WriteLine("Данные студента добавлены");
 
                             break;
 
@@ -66,6 +68,8 @@ namespace Class_Human_C
                                 experience);
 
                             people.Add(employee);
+                            
+                            Console.WriteLine("Данные работника добавлены");
 
                             break;
 
@@ -90,6 +94,8 @@ namespace Class_Human_C
                                 brand, model);
 
                             people.Add(driver);
+                            
+                            Console.WriteLine("Данные водителя добавлены");
 
                             break;
                     }
