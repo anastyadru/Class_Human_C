@@ -48,8 +48,7 @@ namespace Class_Human_C
                             Student student = new Student(surname, name, patronymic, birth, faculty, course, group);
 
                             people.Add(student);
-                            
-                            Console.WriteLine("Данные студента добавлены");
+                            Console.WriteLine("Данные студента добавлены:\n" + student); 
 
                             break;
 
@@ -68,8 +67,7 @@ namespace Class_Human_C
                                 experience);
 
                             people.Add(employee);
-                            
-                            Console.WriteLine("Данные работника добавлены");
+                            Console.WriteLine("Данные работника добавлены:\n" + employee);
 
                             break;
 
@@ -94,8 +92,7 @@ namespace Class_Human_C
                                 brand, model);
 
                             people.Add(driver);
-                            
-                            Console.WriteLine("Данные водителя добавлены");
+                            Console.WriteLine("Данные водителя добавлены:\n" + driver);
 
                             break;
                     }
@@ -182,18 +179,16 @@ namespace Class_Human_C
                                     Console.WriteLine("Введите новую модель: ");
                                     ((Driver)personToEdit).Model = Console.ReadLine();
                                 }
-
                                 break;
                         }
 
                         Console.WriteLine("Изменения сохранены");
                     }
-                    
-                    else 
+
+                    else
                     {
                         Console.WriteLine("Человек с такой фамилией не найден");
                     }
-                    
                     break;
                 
                 case 3:
@@ -206,14 +201,13 @@ namespace Class_Human_C
                     if (personToDelete != null)
                     {
                         people.Remove(personToDelete);
-                        Console.WriteLine("Информация о человеке удалена.");
+                        Console.WriteLine("Информация о человеке удалена");
                     }
                     
                     else
                     {
-                        Console.WriteLine("Человек с такой фамилией не найден.");
+                        Console.WriteLine("Человек с такой фамилией не найден");
                     }
-                    
                     break;
             }
         }
